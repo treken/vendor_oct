@@ -14,15 +14,15 @@ ifeq (oct_jflte,$(TARGET_PRODUCT))
 #    vendor/oct/prebuilt/1080x1920/bootanimation.zip:system/media/bootanimation.zip
 
 # Copy QuickBoot.apk
-PRODUCT_COPY_FILES += \
-    vendor/oct/prebuilt/common/apk/QuickBoot.apk:system/app/QuickBoot.apk
+#PRODUCT_COPY_FILES += \
+#    vendor/oct/prebuilt/common/apk/QuickBoot.apk:system/app/QuickBoot.apk
 
 # Include OctOS common configuration
-include vendor/oct/config/oct_common.mk
+include vendor/oct/config/common.mk
 
 # Device Overlays
-PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/oct/overlay/device/jflte
+#PRODUCT_PACKAGE_OVERLAYS += \
+#    vendor/oct/overlay/device/jflte
 
 # Inherit CM device configuration
 $(call inherit-product, device/samsung/jflte/cm.mk)
